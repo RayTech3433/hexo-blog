@@ -7,19 +7,19 @@ description: 测试各类blocks的转换效果, 包括link_preview， bookmark�
 tags:
   - Notion
   - Blog
-updated: 2024-03-28 16:22:00
+updated: 2024-03-28 22:09:00
 date: 2024-03-25 16:03:00
 slug: notion2markdown-test
 title: Notion2markdown转换效果测试
-cover: https://prod-files-secure.s3.us-west-2.amazonaws.com/51cbfc47-8cd9-4022-97ac-f4afefc3ea0f/5f5e813e-2f53-4d48-a719-01cb0ff4fb6c/IMG_20230419_043151.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240328T082731Z&X-Amz-Expires=3600&X-Amz-Signature=120c5f2bf289c8c171fe4e54a062042aaa2123684094a2fd856b65aa3c6cbd5d&X-Amz-SignedHeaders=host&x-id=GetObject
+cover: https://www.notion.so/images/page-cover/gradients_8.png
 id: 3ab485d5-f0a6-4bc0-846f-31f01841cdd9
 ---
 
-1234
-
 # image
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/51cbfc47-8cd9-4022-97ac-f4afefc3ea0f/de3c4ed2-d664-4666-a4b2-6113bbca1dcc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240328T082732Z&X-Amz-Expires=3600&X-Amz-Signature=517584dc4685c5da03249a9a20ab634aac6db369eaebd698ab4db6d413fbfc01&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://cdn.jsdelivr.net/gh/RayTech3433/img/hexo_img/11c7c51a-bbcc-46d1-b48a-4b944728f5a9.png)
+
+![](https://cdn.jsdelivr.net/gh/RayTech3433/img/hexo_img/de3c4ed2-d664-4666-a4b2-6113bbca1dcc.png)
 
 # link_preview
 
@@ -43,7 +43,7 @@ id: 3ab485d5-f0a6-4bc0-846f-31f01841cdd9
 
 ## 本地
 
-<div class="pdf"><iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/51cbfc47-8cd9-4022-97ac-f4afefc3ea0f/99b71d70-f1cb-4957-9bbf-4760bec39c50/PDF.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240328T082732Z&X-Amz-Expires=3600&X-Amz-Signature=1fb6aef44c0eac79e916821ffbbc8cbe1af3016fd237801ba18a00b190a75de1&X-Amz-SignedHeaders=host&x-id=GetObject" style="width: 100%; margin:0; aspect-ratio: 16/9;"></iframe><div style="text-align: center; margin:0;"><p>测试的本地文件</p></div></div>
+<div class="pdf"><iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/51cbfc47-8cd9-4022-97ac-f4afefc3ea0f/99b71d70-f1cb-4957-9bbf-4760bec39c50/PDF.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240328%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240328T141125Z&X-Amz-Expires=3600&X-Amz-Signature=f3eabf6c1f1f2778d892a50b28abc40987801adb676bf04fe5ee1d9e74e5db27&X-Amz-SignedHeaders=host&x-id=GetObject" style="width: 100%; margin:0; aspect-ratio: 16/9;"></iframe><div style="text-align: center; margin:0;"><p>测试的本地文件</p></div></div>
 
 ## 远程文件
 
