@@ -63,28 +63,53 @@ jobs:
         with:
           file_pattern: 'source/'
           commit_message: Automatic NotionSync.
-          
+      - name: Set Git identity
+        run: |
+          git config --global user.email "760063954@qq.com"
+          git config --global user.name "RayTech3433"
+
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: '12'
+          node-version: 14
 
-      - name: Setup Hexo
+      - name: Install Pandoc
+        run: sudo apt-get install -y pandoc
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Modify index.js
+        run: sed -i '24s/.*/      var endPos = link.length - 1;/' node_modules/hexo-asset-image/index.js
+
+      - name: Build and deploy
         env:
-          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+          DEPLOY_BLOG: ${{secrets.DEPLOY_BLOG}}
         run: |
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 700 ~/.ssh
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "john@doe.com"
-          git config --global user.name "John Doe"
-          npm install hexo-cli -g
-          npm install
+          npm run build
+          npm run deploy
+          
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: '12'
 
-      - name: Deploy
-        run: |
-          hexo clean
-          hexo g
-          hexo deploy
+      # - name: Setup Hexo
+      #   env:
+      #     ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+      #   run: |
+      #     mkdir -p ~/.ssh/
+      #     echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+      #     chmod 700 ~/.ssh
+      #     chmod 600 ~/.ssh/id_rsa
+      #     ssh-keyscan github.com >> ~/.ssh/known_hosts
+      #     git config --global user.email "john@doe.com"
+      #     git config --global user.name "John Doe"
+      #     npm install hexo-cli -g
+      #     npm install
+
+      # - name: Deploy
+      #   run: |
+      #     hexo clean
+      #     hexo g
+      #     hexo deploy
