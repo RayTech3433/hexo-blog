@@ -57,17 +57,6 @@ jobs:
         if: steps.NotionSync.outputs.updated_count != '0'
         run: |
           git pull
-      - name: Use Node.js ${{ matrix.node_version }}
-        if: steps.NotionSync.outputs.updated_count != '0'
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node_version }}
-          cache: 'npm'
-      - name: Install dependencies & build
-        if: steps.NotionSync.outputs.updated_count != '0'
-        run: |
-          npm install
-          npm run build
       - name: Commit & Push
         if: steps.NotionSync.outputs.updated_count != '0'
         uses: stefanzweifel/git-auto-commit-action@v4
