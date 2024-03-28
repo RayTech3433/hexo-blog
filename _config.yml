@@ -119,7 +119,7 @@ deploy:
   type: git
   repo: https://github.com/RayTech3433/RayTech3433.github.io.git
   branch: main
-  token: 
+  token: $DEPLOY_BLOG
 
 search:
   path: search.xml
