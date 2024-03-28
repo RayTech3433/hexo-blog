@@ -63,61 +63,28 @@ jobs:
         with:
           file_pattern: 'source/'
           commit_message: Automatic NotionSync.
-          
-      - uses: actions/checkout@v2 # 拉取仓库代码
-      - uses: actions/setup-node@v2 # 设置 node.js 环境
-      - name: Cache node_modules # 缓存 node_modules，提高编译速度，毕竟每月只有 2000 分钟。
-        uses: actions/cache@v2 # 亲测 Github 服务器编译速度比我自己电脑都快，如果每次构建按5分钟计算，我们每个月可以免费部署 400 次，Github yyds！！！
-        env:
-          cache-name: cache-node-modules
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      - name: Init Node.js # 安装源代码所需插件
+          node-version: '12'
+
+      - name: Setup Hexo
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
         run: |
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "john@doe.com"
+          git config --global user.name "John Doe"
+          npm install hexo-cli -g
           npm install
-          echo "init node successful"
-      - name: Install Hexo-cli # 安装 Hexo
-        run: |
-          npm install -g hexo-cli --save
-          echo "install hexo successful"
-      - name: Build Blog # 编译创建静态博客文件
+
+      - name: Deploy
         run: |
           hexo clean
           hexo g
-          echo "build blog successful"
-      - name: Deploy DoubleAm's Blog # 设置 git 信息并推送静态博客文件
-        run: |
-          git config --global user.email "760063954@qq.com"
-          git config --global user.name "RayTech3433"
           hexo deploy
-
-      - run: echo "Deploy Successful!"
-      # - name: Setup Node.js
-      #   uses: actions/setup-node@v1
-      #   with:
-      #     node-version: '12'
-
-      # - name: Setup Hexo
-      #   env:
-      #     ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
-      #   run: |
-      #     mkdir -p ~/.ssh/
-      #     echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-      #     chmod 700 ~/.ssh
-      #     chmod 600 ~/.ssh/id_rsa
-      #     ssh-keyscan github.com >> ~/.ssh/known_hosts
-      #     git config --global user.email "john@doe.com"
-      #     git config --global user.name "John Doe"
-      #     npm install hexo-cli -g
-      #     npm install
-
-      # - name: Deploy
-      #   run: |
-      #     hexo clean
-      #     hexo g
-      #     hexo deploy
