@@ -7,7 +7,7 @@ description: 测试各类blocks的转换效果, 包括link_preview， bookmark�
 tags:
   - Notion
   - Blog
-updated: 2024-04-30 14:55:00
+updated: 2024-04-30 19:17:00
 date: 2024-03-25 16:03:00
 slug: notion2markdown-test
 title: Notion2markdown转换效果测试
@@ -17,7 +17,7 @@ id: 3ab485d5-f0a6-4bc0-846f-31f01841cdd9
 
 # image
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/51cbfc47-8cd9-4022-97ac-f4afefc3ea0f/11c7c51a-bbcc-46d1-b48a-4b944728f5a9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240430%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240430T065702Z&X-Amz-Expires=3600&X-Amz-Signature=85a6e085c400bcdc6dc931adc33afe6e43aff5654831e49e3d2d5c4383f955ac&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/51cbfc47-8cd9-4022-97ac-f4afefc3ea0f/11c7c51a-bbcc-46d1-b48a-4b944728f5a9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240505%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240505T111451Z&X-Amz-Expires=3600&X-Amz-Signature=524930f8ddba9671aab7bb59318e57b715a4d89be6541c939de50361eb8c174f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 <div style="width: 100%; margin-top: 4px; margin-bottom: 4px;"><div style="display: flex; background:white;border-radius:5px"><a href="https://doradx.notion.site/397943b2d0384e15ba69448900823984?v=06762d5d3e2140e399c03d84131ee682"target="_blank"rel="noopener noreferrer"style="display: flex; color: inherit; text-decoration: none; user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; flex-grow: 1; min-width: 0px; flex-wrap: wrap-reverse; align-items: stretch; text-align: left; overflow: hidden; border: 1px solid rgba(55, 53, 47, 0.16); border-radius: 5px; position: relative; fill: inherit;"><div style="flex: 4 1 180px; padding: 12px 14px 14px; overflow: hidden; text-align: left;"><div style="font-size: 14px; line-height: 20px; color: rgb(55, 53, 47); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-height: 24px; margin-bottom: 2px;">Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.</div><div style="font-size: 12px; line-height: 16px; color: rgba(55, 53, 47, 0.65); height: 32px; overflow: hidden;">A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team</div><div style="display: flex; margin-top: 6px; height: 16px;"><img src="https://doradx.notion.site/images/favicon.ico"style="width: 16px; height: 16px; min-width: 16px; margin-right: 6px;"><div style="font-size: 12px; line-height: 16px; color: rgb(55, 53, 47); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">https://doradx.notion.site/397943b2d0384e15ba69448900823984?v=06762d5d3e2140e399c03d84131ee682</div></div></div><div style="flex: 1 1 180px; display: block; position: relative;"><div style="position: absolute; inset: 0px;"><div style="width: 100%; height: 100%;"><img src="https://www.notion.so/images/meta/default.png" referrerpolicy="no-referrer" style="display: block; object-fit: cover; border-radius: 3px; width: 100%; height: 100%;"></div></div></div></a></div></div>
 
