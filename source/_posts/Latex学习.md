@@ -3,7 +3,9 @@ title: Latex学习
 tags: Latex
 categories: 学习记录
 keyword: Latex
+swiper_index: 1
 abbrlink: 8837ae6a
+description: 一些关于Latex学习中的笔记啦！
 date: 2024-03-07 08:54:30
 ---
 
