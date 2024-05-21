@@ -7,7 +7,7 @@ description: 测试各类blocks的转换效果, 包括link_preview， bookmark�
 tags:
   - Notion
   - Blog
-updated: 2024-05-15 09:41:00
+updated: 2024-05-21 14:26:00
 date: 2024-03-25 16:03:00
 slug: notion2markdown-test
 title: Notion2markdown转换效果测试
