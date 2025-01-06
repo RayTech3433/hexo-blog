@@ -195,7 +195,7 @@ envelope_comment:
 #google search
 sitemap:
   path: sitemap.xml
-  url: https://raytech.ip-ddns.com
+  url: https://raytech3433.github.io
 #baidu search
 baidusitemap:
   path: baidusitemap.xml
